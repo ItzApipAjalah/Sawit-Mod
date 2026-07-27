@@ -79,6 +79,12 @@ public class ModItems {
     public static final RegistrySupplier<Item> SAWIT_PRESSURE_PLATE = ITEMS.register("sawit_pressure_plate", () ->
             new BlockItem(ModBlocks.SAWIT_PRESSURE_PLATE.get(), new Item.Properties()));
 
+    public static final RegistrySupplier<Item> SAWIT_SIGN = ITEMS.register("sawit_sign", () ->
+            new net.minecraft.world.item.SignItem(new Item.Properties().stacksTo(16), ModBlocks.SAWIT_SIGN.get(), ModBlocks.SAWIT_WALL_SIGN.get()));
+
+    public static final RegistrySupplier<Item> SAWIT_HANGING_SIGN = ITEMS.register("sawit_hanging_sign", () ->
+            new net.minecraft.world.item.HangingSignItem(ModBlocks.SAWIT_HANGING_SIGN.get(), ModBlocks.SAWIT_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+
     public static void register() {
         ITEMS.register();
         
@@ -103,6 +109,8 @@ public class ModItems {
         dev.architectury.registry.CreativeTabRegistry.append(net.minecraft.world.item.CreativeModeTabs.BUILDING_BLOCKS, SAWIT_TRAPDOOR);
         dev.architectury.registry.CreativeTabRegistry.append(net.minecraft.world.item.CreativeModeTabs.BUILDING_BLOCKS, SAWIT_BUTTON);
         dev.architectury.registry.CreativeTabRegistry.append(net.minecraft.world.item.CreativeModeTabs.BUILDING_BLOCKS, SAWIT_PRESSURE_PLATE);
+        dev.architectury.registry.CreativeTabRegistry.append(net.minecraft.world.item.CreativeModeTabs.BUILDING_BLOCKS, SAWIT_SIGN);
+        dev.architectury.registry.CreativeTabRegistry.append(net.minecraft.world.item.CreativeModeTabs.BUILDING_BLOCKS, SAWIT_HANGING_SIGN);
         dev.architectury.registry.CreativeTabRegistry.append(net.minecraft.world.item.CreativeModeTabs.TOOLS_AND_UTILITIES, SAWIT_BOAT);
         dev.architectury.registry.CreativeTabRegistry.append(net.minecraft.world.item.CreativeModeTabs.TOOLS_AND_UTILITIES, SAWIT_CHEST_BOAT);
     }

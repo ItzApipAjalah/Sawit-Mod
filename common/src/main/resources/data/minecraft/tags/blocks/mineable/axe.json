@@ -1,17 +1,21 @@
 {
   "replace": false,
   "values": [
-    "#sawitmod:sawit_logs",
-    "sawitmod:sawit_planks",
-    "sawitmod:sawit_trunk",
+    "sawitmod:sawit_button",
+    "sawitmod:sawit_hanging_sign",
+    "sawitmod:sawit_pressure_plate",
+    "sawitmod:sawit_wall_sign",
     "sawitmod:sawit_bag",
-    "sawitmod:sawit_stairs",
-    "sawitmod:sawit_slab",
     "sawitmod:sawit_fence",
+    "sawitmod:sawit_slab",
+    "sawitmod:sawit_sign",
     "sawitmod:sawit_fence_gate",
+    "sawitmod:sawit_trunk",
     "sawitmod:sawit_door",
     "sawitmod:sawit_trapdoor",
-    "sawitmod:sawit_button",
-    "sawitmod:sawit_pressure_plate"
+    "sawitmod:sawit_wall_hanging_sign",
+    "sawitmod:sawit_planks",
+    "sawitmod:sawit_stairs",
+    "#sawitmod:sawit_logs"
   ]
 }

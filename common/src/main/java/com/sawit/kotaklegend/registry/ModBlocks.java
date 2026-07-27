@@ -11,7 +11,57 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 
+import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.block.state.properties.WoodType;
+
 public class ModBlocks {
+    private static BlockSetType registerBlockSetType(BlockSetType type) {
+        try {
+            java.lang.reflect.Method m = BlockSetType.class.getDeclaredMethod("register", BlockSetType.class);
+            m.setAccessible(true);
+            return (BlockSetType) m.invoke(null, type);
+        } catch (Exception e) {
+            try {
+                java.lang.reflect.Method m = BlockSetType.class.getDeclaredMethod("m_271928_", BlockSetType.class);
+                m.setAccessible(true);
+                return (BlockSetType) m.invoke(null, type);
+            } catch (Exception e2) {}
+            return type;
+        }
+    }
+
+    private static WoodType registerWoodType(WoodType type) {
+        try {
+            java.lang.reflect.Method m = WoodType.class.getDeclaredMethod("register", WoodType.class);
+            m.setAccessible(true);
+            return (WoodType) m.invoke(null, type);
+        } catch (Exception e) {
+            try {
+                java.lang.reflect.Method m = WoodType.class.getDeclaredMethod("m_272210_", WoodType.class);
+                m.setAccessible(true);
+                return (WoodType) m.invoke(null, type);
+            } catch (Exception e2) {
+                // Fallback: inject into the static Collection/Set field
+                try {
+                    for (java.lang.reflect.Field field : WoodType.class.getDeclaredFields()) {
+                        if (java.util.Collection.class.isAssignableFrom(field.getType())) {
+                            field.setAccessible(true);
+                            java.util.Collection<WoodType> col = (java.util.Collection<WoodType>) field.get(null);
+                            if (col != null && col.contains(WoodType.OAK)) {
+                                col.add(type);
+                                return type;
+                            }
+                        }
+                    }
+                } catch (Exception e3) {}
+            }
+            return type;
+        }
+    }
+
+    public static final BlockSetType SAWIT_BLOCK_SET = registerBlockSetType(new BlockSetType("sawit"));
+    public static final WoodType SAWIT_WOOD_TYPE = registerWoodType(new WoodType("sawit", SAWIT_BLOCK_SET));
+
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ExampleMod.MOD_ID, Registries.BLOCK);
 
     public static final RegistrySupplier<Block> SAWIT_BLOCK = BLOCKS.register("sawit", () ->
@@ -69,7 +119,19 @@ public class ModBlocks {
             new net.minecraft.world.level.block.ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON), net.minecraft.world.level.block.state.properties.BlockSetType.OAK, 30, true));
 
     public static final RegistrySupplier<Block> SAWIT_PRESSURE_PLATE = BLOCKS.register("sawit_pressure_plate", () ->
-            new net.minecraft.world.level.block.PressurePlateBlock(net.minecraft.world.level.block.PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE), net.minecraft.world.level.block.state.properties.BlockSetType.OAK));
+            new net.minecraft.world.level.block.PressurePlateBlock(net.minecraft.world.level.block.PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE), SAWIT_BLOCK_SET));
+
+    public static final RegistrySupplier<Block> SAWIT_SIGN = BLOCKS.register("sawit_sign", () ->
+            new com.sawit.kotaklegend.block.SawitStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), SAWIT_WOOD_TYPE));
+
+    public static final RegistrySupplier<Block> SAWIT_WALL_SIGN = BLOCKS.register("sawit_wall_sign", () ->
+            new com.sawit.kotaklegend.block.SawitWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), SAWIT_WOOD_TYPE));
+
+    public static final RegistrySupplier<Block> SAWIT_HANGING_SIGN = BLOCKS.register("sawit_hanging_sign", () ->
+            new com.sawit.kotaklegend.block.SawitHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), SAWIT_WOOD_TYPE));
+
+    public static final RegistrySupplier<Block> SAWIT_WALL_HANGING_SIGN = BLOCKS.register("sawit_wall_hanging_sign", () ->
+            new com.sawit.kotaklegend.block.SawitWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), SAWIT_WOOD_TYPE));
 
 
     public static void register() {

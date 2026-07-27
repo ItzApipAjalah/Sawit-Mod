@@ -13,6 +13,13 @@ public class ModBlockEntities {
     public static final RegistrySupplier<BlockEntityType<SawitBlockEntity>> SAWIT_BE = BLOCK_ENTITIES.register("sawit_be", () ->
             BlockEntityType.Builder.of(SawitBlockEntity::new, ModBlocks.SAWIT_BLOCK.get()).build(null));
 
+    public static final RegistrySupplier<BlockEntityType<com.sawit.kotaklegend.block.entity.SawitSignBlockEntity>> SAWIT_SIGN_BE = BLOCK_ENTITIES.register("sawit_sign_be", () ->
+            BlockEntityType.Builder.of(com.sawit.kotaklegend.block.entity.SawitSignBlockEntity::new, ModBlocks.SAWIT_SIGN.get(), ModBlocks.SAWIT_WALL_SIGN.get()).build(null));
+
+    public static final RegistrySupplier<BlockEntityType<com.sawit.kotaklegend.block.entity.SawitHangingSignBlockEntity>> SAWIT_HANGING_SIGN_BE = BLOCK_ENTITIES.register("sawit_hanging_sign_be", () ->
+            BlockEntityType.Builder.of(com.sawit.kotaklegend.block.entity.SawitHangingSignBlockEntity::new, ModBlocks.SAWIT_HANGING_SIGN.get(), ModBlocks.SAWIT_WALL_HANGING_SIGN.get()).build(null));
+
+
     public static void register() {
         BLOCK_ENTITIES.register();
     }
