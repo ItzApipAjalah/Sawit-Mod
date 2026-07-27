@@ -26,7 +26,7 @@
     "sawitmod.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.19.3",
+    "fabricloader": "*",
     "minecraft": "~1.20.4",
     "java": ">=17",
     "architectury": ">=11.1.17",
