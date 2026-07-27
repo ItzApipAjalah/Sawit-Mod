@@ -84,7 +84,8 @@ public class SawitTrunkDummyBlock extends Block implements BonemealableBlock {
         BlockPos basePos = getBasePos(level, pos);
         if (basePos != null) {
             BlockState baseState = level.getBlockState(basePos);
-            return baseState.getBlock().use(baseState, level, basePos, player, hand, hit);
+            BlockHitResult newHit = new BlockHitResult(hit.getLocation(), hit.getDirection(), basePos, hit.isInside());
+            return baseState.getBlock().use(baseState, level, basePos, player, hand, newHit);
         }
         return super.use(state, level, pos, player, hand, hit);
     }
