@@ -57,6 +57,7 @@ venv.bak/
 
 # Gradle
 .gradle/
+.architectury-transformer/
 */build/
 build/
 
