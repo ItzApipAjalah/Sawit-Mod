@@ -1,0 +1,2210 @@
+{
+    "credit": "burung25",
+    "textures": {
+        "particle": "sawitmod:block/sawit_log",
+        "trunk": "sawitmod:block/sawit_log",
+        "leaves": "sawitmod:block/sawit_leaves",
+        "fruit": "sawitmod:block/sawit_fruit"
+    },
+    "elements": [
+        {
+            "name": "trunk_0",
+            "from": [
+                5,
+                0,
+                5
+            ],
+            "to": [
+                11,
+                16,
+                11
+            ],
+            "faces": {
+                "north": {
+                    "uv": [
+                        5,
+                        0,
+                        11,
+                        16
+                    ],
+                    "texture": "#trunk"
+                },
+                "east": {
+                    "uv": [
+                        5,
+                        0,
+                        11,
+                        16
+                    ],
+                    "texture": "#trunk"
+                },
+                "south": {
+                    "uv": [
+                        5,
+                        0,
+                        11,
+                        16
+                    ],
+                    "texture": "#trunk"
+                },
+                "west": {
+                    "uv": [
+                        5,
+                        0,
+                        11,
+                        16
+                    ],
+                    "texture": "#trunk"
+                },
+                "up": {
+                    "uv": [
+                        5,
+                        5,
+                        11,
+                        11
+                    ],
+                    "texture": "#trunk"
+                },
+                "down": {
+                    "uv": [
+                        5,
+                        5,
+                        11,
+                        11
+                    ],
+                    "texture": "#trunk"
+                }
+            }
+        },
+        {
+            "name": "trunk_1",
+            "from": [
+                5,
+                16,
+                5
+            ],
+            "to": [
+                11,
+                32,
+                11
+            ],
+            "faces": {
+                "north": {
+                    "uv": [
+                        5,
+                        0,
+                        11,
+                        16
+                    ],
+                    "texture": "#trunk"
+                },
+                "east": {
+                    "uv": [
+                        5,
+                        0,
+                        11,
+                        16
+                    ],
+                    "texture": "#trunk"
+                },
+                "south": {
+                    "uv": [
+                        5,
+                        0,
+                        11,
+                        16
+                    ],
+                    "texture": "#trunk"
+                },
+                "west": {
+                    "uv": [
+                        5,
+                        0,
+                        11,
+                        16
+                    ],
+                    "texture": "#trunk"
+                },
+                "up": {
+                    "uv": [
+                        5,
+                        5,
+                        11,
+                        11
+                    ],
+                    "texture": "#trunk"
+                },
+                "down": {
+                    "uv": [
+                        5,
+                        5,
+                        11,
+                        11
+                    ],
+                    "texture": "#trunk"
+                }
+            }
+        },
+        {
+            "name": "fruit",
+            "from": [
+                2,
+                18,
+                2
+            ],
+            "to": [
+                14,
+                28,
+                14
+            ],
+            "faces": {
+                "north": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#fruit"
+                },
+                "east": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#fruit"
+                },
+                "south": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#fruit"
+                },
+                "west": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#fruit"
+                }
+            }
+        },
+        {
+            "name": "top_x_-45",
+            "from": [
+                -8,
+                24,
+                7.9
+            ],
+            "to": [
+                24,
+                32,
+                8.1
+            ],
+            "faces": {
+                "north": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "south": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            },
+            "rotation": {
+                "origin": [
+                    8,
+                    28.0,
+                    8
+                ],
+                "axis": "y",
+                "angle": -45
+            }
+        },
+        {
+            "name": "top_z_-45",
+            "from": [
+                7.9,
+                24,
+                -8
+            ],
+            "to": [
+                8.1,
+                32,
+                24
+            ],
+            "faces": {
+                "east": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "west": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            },
+            "rotation": {
+                "origin": [
+                    8,
+                    28.0,
+                    8
+                ],
+                "axis": "y",
+                "angle": -45
+            }
+        },
+        {
+            "name": "top_x_-22.5",
+            "from": [
+                -8,
+                24,
+                7.9
+            ],
+            "to": [
+                24,
+                32,
+                8.1
+            ],
+            "faces": {
+                "north": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "south": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            },
+            "rotation": {
+                "origin": [
+                    8,
+                    28.0,
+                    8
+                ],
+                "axis": "y",
+                "angle": -22.5
+            }
+        },
+        {
+            "name": "top_z_-22.5",
+            "from": [
+                7.9,
+                24,
+                -8
+            ],
+            "to": [
+                8.1,
+                32,
+                24
+            ],
+            "faces": {
+                "east": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "west": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            },
+            "rotation": {
+                "origin": [
+                    8,
+                    28.0,
+                    8
+                ],
+                "axis": "y",
+                "angle": -22.5
+            }
+        },
+        {
+            "name": "top_x_0",
+            "from": [
+                -8,
+                24,
+                7.9
+            ],
+            "to": [
+                24,
+                32,
+                8.1
+            ],
+            "faces": {
+                "north": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "south": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            }
+        },
+        {
+            "name": "top_z_0",
+            "from": [
+                7.9,
+                24,
+                -8
+            ],
+            "to": [
+                8.1,
+                32,
+                24
+            ],
+            "faces": {
+                "east": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "west": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            }
+        },
+        {
+            "name": "top_x_22.5",
+            "from": [
+                -8,
+                24,
+                7.9
+            ],
+            "to": [
+                24,
+                32,
+                8.1
+            ],
+            "faces": {
+                "north": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "south": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            },
+            "rotation": {
+                "origin": [
+                    8,
+                    28.0,
+                    8
+                ],
+                "axis": "y",
+                "angle": 22.5
+            }
+        },
+        {
+            "name": "top_z_22.5",
+            "from": [
+                7.9,
+                24,
+                -8
+            ],
+            "to": [
+                8.1,
+                32,
+                24
+            ],
+            "faces": {
+                "east": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "west": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            },
+            "rotation": {
+                "origin": [
+                    8,
+                    28.0,
+                    8
+                ],
+                "axis": "y",
+                "angle": 22.5
+            }
+        },
+        {
+            "name": "top_x_45",
+            "from": [
+                -8,
+                24,
+                7.9
+            ],
+            "to": [
+                24,
+                32,
+                8.1
+            ],
+            "faces": {
+                "north": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "south": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            },
+            "rotation": {
+                "origin": [
+                    8,
+                    28.0,
+                    8
+                ],
+                "axis": "y",
+                "angle": 45
+            }
+        },
+        {
+            "name": "top_z_45",
+            "from": [
+                7.9,
+                24,
+                -8
+            ],
+            "to": [
+                8.1,
+                32,
+                24
+            ],
+            "faces": {
+                "east": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "west": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            },
+            "rotation": {
+                "origin": [
+                    8,
+                    28.0,
+                    8
+                ],
+                "axis": "y",
+                "angle": 45
+            }
+        },
+        {
+            "name": "mid_x_-45",
+            "from": [
+                -16,
+                20,
+                7.9
+            ],
+            "to": [
+                32,
+                32,
+                8.1
+            ],
+            "faces": {
+                "north": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "south": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            },
+            "rotation": {
+                "origin": [
+                    8,
+                    26.0,
+                    8
+                ],
+                "axis": "y",
+                "angle": -45
+            }
+        },
+        {
+            "name": "mid_z_-45",
+            "from": [
+                7.9,
+                20,
+                -16
+            ],
+            "to": [
+                8.1,
+                32,
+                32
+            ],
+            "faces": {
+                "east": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "west": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            },
+            "rotation": {
+                "origin": [
+                    8,
+                    26.0,
+                    8
+                ],
+                "axis": "y",
+                "angle": -45
+            }
+        },
+        {
+            "name": "mid_x_-22.5",
+            "from": [
+                -16,
+                20,
+                7.9
+            ],
+            "to": [
+                32,
+                32,
+                8.1
+            ],
+            "faces": {
+                "north": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "south": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            },
+            "rotation": {
+                "origin": [
+                    8,
+                    26.0,
+                    8
+                ],
+                "axis": "y",
+                "angle": -22.5
+            }
+        },
+        {
+            "name": "mid_z_-22.5",
+            "from": [
+                7.9,
+                20,
+                -16
+            ],
+            "to": [
+                8.1,
+                32,
+                32
+            ],
+            "faces": {
+                "east": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "west": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            },
+            "rotation": {
+                "origin": [
+                    8,
+                    26.0,
+                    8
+                ],
+                "axis": "y",
+                "angle": -22.5
+            }
+        },
+        {
+            "name": "mid_x_0",
+            "from": [
+                -16,
+                20,
+                7.9
+            ],
+            "to": [
+                32,
+                32,
+                8.1
+            ],
+            "faces": {
+                "north": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "south": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            }
+        },
+        {
+            "name": "mid_z_0",
+            "from": [
+                7.9,
+                20,
+                -16
+            ],
+            "to": [
+                8.1,
+                32,
+                32
+            ],
+            "faces": {
+                "east": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "west": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            }
+        },
+        {
+            "name": "mid_x_22.5",
+            "from": [
+                -16,
+                20,
+                7.9
+            ],
+            "to": [
+                32,
+                32,
+                8.1
+            ],
+            "faces": {
+                "north": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "south": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            },
+            "rotation": {
+                "origin": [
+                    8,
+                    26.0,
+                    8
+                ],
+                "axis": "y",
+                "angle": 22.5
+            }
+        },
+        {
+            "name": "mid_z_22.5",
+            "from": [
+                7.9,
+                20,
+                -16
+            ],
+            "to": [
+                8.1,
+                32,
+                32
+            ],
+            "faces": {
+                "east": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "west": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            },
+            "rotation": {
+                "origin": [
+                    8,
+                    26.0,
+                    8
+                ],
+                "axis": "y",
+                "angle": 22.5
+            }
+        },
+        {
+            "name": "mid_x_45",
+            "from": [
+                -16,
+                20,
+                7.9
+            ],
+            "to": [
+                32,
+                32,
+                8.1
+            ],
+            "faces": {
+                "north": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "south": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            },
+            "rotation": {
+                "origin": [
+                    8,
+                    26.0,
+                    8
+                ],
+                "axis": "y",
+                "angle": 45
+            }
+        },
+        {
+            "name": "mid_z_45",
+            "from": [
+                7.9,
+                20,
+                -16
+            ],
+            "to": [
+                8.1,
+                32,
+                32
+            ],
+            "faces": {
+                "east": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "west": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            },
+            "rotation": {
+                "origin": [
+                    8,
+                    26.0,
+                    8
+                ],
+                "axis": "y",
+                "angle": 45
+            }
+        },
+        {
+            "name": "bot_x_-45",
+            "from": [
+                -16,
+                16,
+                7.9
+            ],
+            "to": [
+                32,
+                32,
+                8.1
+            ],
+            "faces": {
+                "north": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "south": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            },
+            "rotation": {
+                "origin": [
+                    8,
+                    24.0,
+                    8
+                ],
+                "axis": "y",
+                "angle": -45
+            }
+        },
+        {
+            "name": "bot_z_-45",
+            "from": [
+                7.9,
+                16,
+                -16
+            ],
+            "to": [
+                8.1,
+                32,
+                32
+            ],
+            "faces": {
+                "east": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "west": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            },
+            "rotation": {
+                "origin": [
+                    8,
+                    24.0,
+                    8
+                ],
+                "axis": "y",
+                "angle": -45
+            }
+        },
+        {
+            "name": "bot_x_-22.5",
+            "from": [
+                -16,
+                16,
+                7.9
+            ],
+            "to": [
+                32,
+                32,
+                8.1
+            ],
+            "faces": {
+                "north": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "south": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            },
+            "rotation": {
+                "origin": [
+                    8,
+                    24.0,
+                    8
+                ],
+                "axis": "y",
+                "angle": -22.5
+            }
+        },
+        {
+            "name": "bot_z_-22.5",
+            "from": [
+                7.9,
+                16,
+                -16
+            ],
+            "to": [
+                8.1,
+                32,
+                32
+            ],
+            "faces": {
+                "east": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "west": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            },
+            "rotation": {
+                "origin": [
+                    8,
+                    24.0,
+                    8
+                ],
+                "axis": "y",
+                "angle": -22.5
+            }
+        },
+        {
+            "name": "bot_x_0",
+            "from": [
+                -16,
+                16,
+                7.9
+            ],
+            "to": [
+                32,
+                32,
+                8.1
+            ],
+            "faces": {
+                "north": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "south": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            }
+        },
+        {
+            "name": "bot_z_0",
+            "from": [
+                7.9,
+                16,
+                -16
+            ],
+            "to": [
+                8.1,
+                32,
+                32
+            ],
+            "faces": {
+                "east": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "west": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            }
+        },
+        {
+            "name": "bot_x_22.5",
+            "from": [
+                -16,
+                16,
+                7.9
+            ],
+            "to": [
+                32,
+                32,
+                8.1
+            ],
+            "faces": {
+                "north": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "south": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            },
+            "rotation": {
+                "origin": [
+                    8,
+                    24.0,
+                    8
+                ],
+                "axis": "y",
+                "angle": 22.5
+            }
+        },
+        {
+            "name": "bot_z_22.5",
+            "from": [
+                7.9,
+                16,
+                -16
+            ],
+            "to": [
+                8.1,
+                32,
+                32
+            ],
+            "faces": {
+                "east": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "west": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            },
+            "rotation": {
+                "origin": [
+                    8,
+                    24.0,
+                    8
+                ],
+                "axis": "y",
+                "angle": 22.5
+            }
+        },
+        {
+            "name": "bot_x_45",
+            "from": [
+                -16,
+                16,
+                7.9
+            ],
+            "to": [
+                32,
+                32,
+                8.1
+            ],
+            "faces": {
+                "north": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "south": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            },
+            "rotation": {
+                "origin": [
+                    8,
+                    24.0,
+                    8
+                ],
+                "axis": "y",
+                "angle": 45
+            }
+        },
+        {
+            "name": "bot_z_45",
+            "from": [
+                7.9,
+                16,
+                -16
+            ],
+            "to": [
+                8.1,
+                32,
+                32
+            ],
+            "faces": {
+                "east": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "west": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            },
+            "rotation": {
+                "origin": [
+                    8,
+                    24.0,
+                    8
+                ],
+                "axis": "y",
+                "angle": 45
+            }
+        },
+        {
+            "name": "bot2_x_-45",
+            "from": [
+                -16,
+                12,
+                7.9
+            ],
+            "to": [
+                32,
+                32,
+                8.1
+            ],
+            "faces": {
+                "north": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "south": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            },
+            "rotation": {
+                "origin": [
+                    8,
+                    22.0,
+                    8
+                ],
+                "axis": "y",
+                "angle": -45
+            }
+        },
+        {
+            "name": "bot2_z_-45",
+            "from": [
+                7.9,
+                12,
+                -16
+            ],
+            "to": [
+                8.1,
+                32,
+                32
+            ],
+            "faces": {
+                "east": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "west": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            },
+            "rotation": {
+                "origin": [
+                    8,
+                    22.0,
+                    8
+                ],
+                "axis": "y",
+                "angle": -45
+            }
+        },
+        {
+            "name": "bot2_x_-22.5",
+            "from": [
+                -16,
+                12,
+                7.9
+            ],
+            "to": [
+                32,
+                32,
+                8.1
+            ],
+            "faces": {
+                "north": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "south": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            },
+            "rotation": {
+                "origin": [
+                    8,
+                    22.0,
+                    8
+                ],
+                "axis": "y",
+                "angle": -22.5
+            }
+        },
+        {
+            "name": "bot2_z_-22.5",
+            "from": [
+                7.9,
+                12,
+                -16
+            ],
+            "to": [
+                8.1,
+                32,
+                32
+            ],
+            "faces": {
+                "east": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "west": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            },
+            "rotation": {
+                "origin": [
+                    8,
+                    22.0,
+                    8
+                ],
+                "axis": "y",
+                "angle": -22.5
+            }
+        },
+        {
+            "name": "bot2_x_0",
+            "from": [
+                -16,
+                12,
+                7.9
+            ],
+            "to": [
+                32,
+                32,
+                8.1
+            ],
+            "faces": {
+                "north": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "south": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            }
+        },
+        {
+            "name": "bot2_z_0",
+            "from": [
+                7.9,
+                12,
+                -16
+            ],
+            "to": [
+                8.1,
+                32,
+                32
+            ],
+            "faces": {
+                "east": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "west": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            }
+        },
+        {
+            "name": "bot2_x_22.5",
+            "from": [
+                -16,
+                12,
+                7.9
+            ],
+            "to": [
+                32,
+                32,
+                8.1
+            ],
+            "faces": {
+                "north": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "south": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            },
+            "rotation": {
+                "origin": [
+                    8,
+                    22.0,
+                    8
+                ],
+                "axis": "y",
+                "angle": 22.5
+            }
+        },
+        {
+            "name": "bot2_z_22.5",
+            "from": [
+                7.9,
+                12,
+                -16
+            ],
+            "to": [
+                8.1,
+                32,
+                32
+            ],
+            "faces": {
+                "east": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "west": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            },
+            "rotation": {
+                "origin": [
+                    8,
+                    22.0,
+                    8
+                ],
+                "axis": "y",
+                "angle": 22.5
+            }
+        },
+        {
+            "name": "bot2_x_45",
+            "from": [
+                -16,
+                12,
+                7.9
+            ],
+            "to": [
+                32,
+                32,
+                8.1
+            ],
+            "faces": {
+                "north": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "south": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            },
+            "rotation": {
+                "origin": [
+                    8,
+                    22.0,
+                    8
+                ],
+                "axis": "y",
+                "angle": 45
+            }
+        },
+        {
+            "name": "bot2_z_45",
+            "from": [
+                7.9,
+                12,
+                -16
+            ],
+            "to": [
+                8.1,
+                32,
+                32
+            ],
+            "faces": {
+                "east": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "west": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            },
+            "rotation": {
+                "origin": [
+                    8,
+                    22.0,
+                    8
+                ],
+                "axis": "y",
+                "angle": 45
+            }
+        },
+        {
+            "name": "lowest_x_-45",
+            "from": [
+                -16,
+                8,
+                7.9
+            ],
+            "to": [
+                32,
+                32,
+                8.1
+            ],
+            "faces": {
+                "north": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "south": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            },
+            "rotation": {
+                "origin": [
+                    8,
+                    20.0,
+                    8
+                ],
+                "axis": "y",
+                "angle": -45
+            }
+        },
+        {
+            "name": "lowest_z_-45",
+            "from": [
+                7.9,
+                8,
+                -16
+            ],
+            "to": [
+                8.1,
+                32,
+                32
+            ],
+            "faces": {
+                "east": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "west": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            },
+            "rotation": {
+                "origin": [
+                    8,
+                    20.0,
+                    8
+                ],
+                "axis": "y",
+                "angle": -45
+            }
+        },
+        {
+            "name": "lowest_x_-22.5",
+            "from": [
+                -16,
+                8,
+                7.9
+            ],
+            "to": [
+                32,
+                32,
+                8.1
+            ],
+            "faces": {
+                "north": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "south": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            },
+            "rotation": {
+                "origin": [
+                    8,
+                    20.0,
+                    8
+                ],
+                "axis": "y",
+                "angle": -22.5
+            }
+        },
+        {
+            "name": "lowest_z_-22.5",
+            "from": [
+                7.9,
+                8,
+                -16
+            ],
+            "to": [
+                8.1,
+                32,
+                32
+            ],
+            "faces": {
+                "east": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "west": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            },
+            "rotation": {
+                "origin": [
+                    8,
+                    20.0,
+                    8
+                ],
+                "axis": "y",
+                "angle": -22.5
+            }
+        },
+        {
+            "name": "lowest_x_0",
+            "from": [
+                -16,
+                8,
+                7.9
+            ],
+            "to": [
+                32,
+                32,
+                8.1
+            ],
+            "faces": {
+                "north": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "south": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            }
+        },
+        {
+            "name": "lowest_z_0",
+            "from": [
+                7.9,
+                8,
+                -16
+            ],
+            "to": [
+                8.1,
+                32,
+                32
+            ],
+            "faces": {
+                "east": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "west": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            }
+        },
+        {
+            "name": "lowest_x_22.5",
+            "from": [
+                -16,
+                8,
+                7.9
+            ],
+            "to": [
+                32,
+                32,
+                8.1
+            ],
+            "faces": {
+                "north": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "south": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            },
+            "rotation": {
+                "origin": [
+                    8,
+                    20.0,
+                    8
+                ],
+                "axis": "y",
+                "angle": 22.5
+            }
+        },
+        {
+            "name": "lowest_z_22.5",
+            "from": [
+                7.9,
+                8,
+                -16
+            ],
+            "to": [
+                8.1,
+                32,
+                32
+            ],
+            "faces": {
+                "east": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "west": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            },
+            "rotation": {
+                "origin": [
+                    8,
+                    20.0,
+                    8
+                ],
+                "axis": "y",
+                "angle": 22.5
+            }
+        },
+        {
+            "name": "lowest_x_45",
+            "from": [
+                -16,
+                8,
+                7.9
+            ],
+            "to": [
+                32,
+                32,
+                8.1
+            ],
+            "faces": {
+                "north": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "south": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            },
+            "rotation": {
+                "origin": [
+                    8,
+                    20.0,
+                    8
+                ],
+                "axis": "y",
+                "angle": 45
+            }
+        },
+        {
+            "name": "lowest_z_45",
+            "from": [
+                7.9,
+                8,
+                -16
+            ],
+            "to": [
+                8.1,
+                32,
+                32
+            ],
+            "faces": {
+                "east": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                },
+                "west": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#leaves"
+                }
+            },
+            "rotation": {
+                "origin": [
+                    8,
+                    20.0,
+                    8
+                ],
+                "axis": "y",
+                "angle": 45
+            }
+        }
+    ]
+}

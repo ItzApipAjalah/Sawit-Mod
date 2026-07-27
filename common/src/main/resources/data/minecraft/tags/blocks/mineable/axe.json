@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "#sawitmod:sawit_logs",
+    "sawitmod:sawit_planks",
+    "sawitmod:sawit_trunk",
+    "sawitmod:sawit_bag"
+  ]
+}
