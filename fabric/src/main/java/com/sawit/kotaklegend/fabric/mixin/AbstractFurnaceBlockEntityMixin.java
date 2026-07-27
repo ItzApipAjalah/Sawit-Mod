@@ -1,4 +1,4 @@
-package com.sawit.kotaklegend.mixin;
+package com.sawit.kotaklegend.fabric.mixin;
 
 import com.sawit.kotaklegend.item.SawitOilItem;
 import net.minecraft.core.NonNullList;

@@ -26,7 +26,8 @@
     ]
   },
   "mixins": [
-    "sawitmod.mixins.json"
+    "sawitmod.mixins.json",
+    "sawitmod-fabric.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.18.4",
