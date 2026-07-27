@@ -21,7 +21,7 @@ public class AbstractFurnaceBlockEntityMixin {
             ItemStack fuelStack = inventory.get(1);
             if (!fuelStack.isEmpty() && fuelStack.getItem() instanceof SawitOilItem) {
                 // If it's Jelantah, we definitely can't burn
-                if (((com.sawit.kotaklegend.item.SawitOilItem)fuelStack.getItem()).isJelantah) {
+                if (((SawitOilItem) fuelStack.getItem()).isJelantah) {
                     cir.setReturnValue(false);
                     return;
                 }

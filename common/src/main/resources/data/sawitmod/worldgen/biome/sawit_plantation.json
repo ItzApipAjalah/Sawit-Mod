@@ -9,23 +9,10 @@
     "sky_color": 7907327,
     "water_color": 6388580,
     "water_fog_color": 2302743,
-    "ambient_sound": "minecraft:ambient.swamp.loop",
-    "mood_sound": {
-      "sound": "minecraft:ambient.swamp.mood",
-      "tick_delay": 6000,
-      "block_search_extent": 8,
-      "offset": 2.0
-    },
-    "additions_sound": {
-      "sound": "minecraft:ambient.swamp.additions",
-      "tick_chance": 0.0111
-    },
-    "music": {
-      "sound": "minecraft:music.overworld.swamp",
-      "min_delay": 12000,
-      "max_delay": 24000,
-      "replace_current_music": false
-    }
+    
+    
+    
+    "music": {"sound": "minecraft:music.overworld.swamp", "min_delay": 12000, "max_delay": 24000, "replace_current_music": false}
   },
   "spawners": {
     "monster": [
