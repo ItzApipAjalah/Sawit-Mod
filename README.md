@@ -1,8 +1,18 @@
 # SawitMod
 
-Hey there! Welcome to SawitMod, a Minecraft 1.20.1 mod that brings a palm oil plantation straight into your world. This mod adds massive palm trees, a muddy swamp village biome, and plenty of palm oil features.
+Hey there! Welcome to SawitMod, a multi-version Minecraft mod that brings a palm oil plantation straight into your world. This mod adds massive palm trees, a muddy swamp village biome, and plenty of palm oil features.
 
 ![Sawit Plantation Biome](README/biome.png)
+
+## Supported Versions
+
+| Version | Status       | Fully Tested |
+|---------|--------------|--------------|
+| 1.20.1  | ✅ Supported | ✅ Yes        |
+| 1.20.2  | ✅ Supported | ❌ Not Yet    |
+| 1.20.4  | ✅ Supported | ❌ Not Yet    |
+| 1.20.5  | ✅ Supported | ❌ Not Yet    |
+| 1.20.6  | ✅ Supported | ❌ Not Yet    |
 
 ## Features
 - **Sawit (Palm) Trees**: Tall palm trees with dense canopies and complete growth stages.
