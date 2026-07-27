@@ -13,7 +13,7 @@ import java.util.function.Supplier;
 
 public class SawitOilItem extends Item {
     private final int uses;
-    private final boolean isJelantah;
+    public final boolean isJelantah;
 
     public SawitOilItem(Properties properties, int uses, boolean isJelantah) {
         super(properties);
