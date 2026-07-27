@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=y": {
+      "model": "sawitmod:block/stripped_sawit_log"
+    },
+    "axis=z": {
+      "model": "sawitmod:block/stripped_sawit_log",
+      "x": 90
+    },
+    "axis=x": {
+      "model": "sawitmod:block/stripped_sawit_log",
+      "x": 90,
+      "y": 90
+    }
+  }
+}
