@@ -79,3 +79,6 @@ run/
 .DS_Store
 Thumbs.db
 *.py
+
+build_all.ps1
+push_all.ps1
