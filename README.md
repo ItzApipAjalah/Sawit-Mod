@@ -16,21 +16,26 @@ Hey there! Welcome to SawitMod, a Minecraft 1.20.1 mod that brings a palm oil pl
 ### Available Items
 Here are the items currently available in SawitMod!
 *Note: This mod is still under active development, so expect more exciting items and blocks to be added in the future!*
+
 ![Available Items](README/item_list.png)
 
 ### Palm Seed Crafting
 You can craft Sawit Seeds from Sawit Fruits to start your own plantation!
+
 ![Seed Crafting](README/seed_crafting.png)
 
 ### Sawit Bag
 Store your harvested bunches efficiently using the Sawit Bag.
+
 ![Sawit Bag Crafting](README/sawit_bag_crafting.png)
 
 ### Palm Oil (Minyak Sawit)
 Extract Minyak (Oil) from the Sawit Bunches for various uses.
+
 ![Minyak Crafting](README/minyak_crafting.png)
 
 Here's how the oil processing stages work:
+
 ![Minyak Explanation](README/minya_penjelasan.png)
 
 
