@@ -1,0 +1,38 @@
+modLoader = "javafml"
+loaderVersion = "[2,)"
+#issueTrackerURL = ""
+license = "Insert License Here"
+
+[[mods]]
+modId = "sawitmod"
+version = "${version}"
+displayName = "sawitmod"
+authors = "Me!"
+description = '''
+This is an example description! Tell everyone what your mod is about!
+'''
+#logoFile = ""
+
+[[dependencies.sawitmod]]
+modId = "neoforge"
+type = "required"
+versionRange = "[20.4,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.sawitmod]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.20.4,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.sawitmod]]
+modId = "architectury"
+type = "required"
+versionRange = "[11.1.17,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[mixins]]
+config = "sawitmod.mixins.json"

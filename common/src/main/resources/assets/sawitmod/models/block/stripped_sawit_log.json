@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "sawitmod:block/stripped_sawit_log_top",
+    "side": "sawitmod:block/stripped_sawit_log"
+  }
+}
