@@ -16,7 +16,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public class AbstractFurnaceBlockEntityMixin {
 
     @Inject(method = "canBurn", at = @At("HEAD"), cancellable = true)
-    private void sawit_canBurn(RegistryAccess registryAccess, @Nullable Recipe<?> recipe, NonNullList<ItemStack> inventory, int maxStackSize, CallbackInfoReturnable<Boolean> cir) {
+    private void sawit_canBurn(RegistryAccess registryAccess, @Nullable net.minecraft.world.item.crafting.RecipeHolder<?> recipe, NonNullList<ItemStack> inventory, int maxStackSize, CallbackInfoReturnable<Boolean> cir) {
         if (recipe != null) {
             ItemStack fuelStack = inventory.get(1);
             if (!fuelStack.isEmpty() && fuelStack.getItem() instanceof SawitOilItem) {
@@ -27,7 +27,7 @@ public class AbstractFurnaceBlockEntityMixin {
                 }
                 
                 // If it is Sawit Oil, it can only cook EDIBLE items (food)
-                ItemStack result = recipe.getResultItem(registryAccess);
+                ItemStack result = recipe.value().getResultItem(registryAccess);
                 if (!result.isEmpty() && !result.getItem().isEdible()) {
                     cir.setReturnValue(false); // Cancel burning if it's not food
                 }
