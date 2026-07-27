@@ -1,6 +1,8 @@
 modLoader = "javafml"
 loaderVersion = "[47,)"
 #issueTrackerURL = ""
+issueTrackerURL = "https://github.com/ItzApipAjalah/Sawit-Mod/issues"
+displayURL = "https://github.com/ItzApipAjalah/Sawit-Mod"
 license = "Insert License Here"
 
 [[mods]]
@@ -12,6 +14,7 @@ description = '''
 This is an example description! Tell everyone what your mod is about!
 '''
 #logoFile = ""
+logoFile = "assets/sawitmod/icon.png"
 
 [[dependencies.sawitmod]]
 modId = "forge"
