@@ -21,6 +21,9 @@
     "entrypoints": {
       "init": [
         "com.sawit.kotaklegend.quilt.ExampleModQuilt"
+      ],
+      "terrablender": [
+        "com.sawit.kotaklegend.quilt.SawitTerraBlenderPlugin"
       ]
     },
     "depends": [
@@ -43,6 +46,7 @@
     ]
   },
   "mixin": [
-    "sawitmod.mixins.json"
+    "sawitmod.mixins.json",
+    "sawitmod-quilt.mixins.json"
   ]
 }
