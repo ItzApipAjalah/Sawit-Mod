@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "quilt_loader": {
+    "group": "${group}",
+    "id": "sawitmod",
+    "version": "${version}",
+    "metadata": {
+      "name": "sawitmod",
+      "description": "This is an example description! Tell everyone what your mod is about!",
+      "contributors": {
+        "Me!": "Author"
+      },
+      "icon": "icon.png",
+      "contact": {
+        "homepage": "https://github.com/ItzApipAjalah/Sawit-Mod",
+        "issues": "https://github.com/ItzApipAjalah/Sawit-Mod/issues",
+        "sources": "https://github.com/ItzApipAjalah/Sawit-Mod"
+      }
+    },
+    "intermediate_mappings": "net.fabricmc:intermediary",
+    "entrypoints": {
+      "init": [
+        "com.sawit.kotaklegend.quilt.ExampleModQuilt"
+      ],
+      "terrablender": [
+        "com.sawit.kotaklegend.quilt.SawitTerraBlenderPlugin"
+      ]
+    },
+    "depends": [
+      {
+        "id": "quilt_loader",
+        "version": "*"
+      },
+      {
+        "id": "quilt_base",
+        "version": "*"
+      },
+      {
+        "id": "minecraft",
+        "version": ">=1.20.1"
+      },
+      {
+        "id": "architectury",
+        "version": ">=9.2.14"
+      }
+    ]
+  },
+  "mixin": [
+    "sawitmod.mixins.json",
+    "sawitmod-quilt.mixins.json"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "sawitmod:sawit_planks"
+    }
+  ],
+  "result": {
+    "item": "sawitmod:sawit_button",
+    "count": 1
+  }
+}

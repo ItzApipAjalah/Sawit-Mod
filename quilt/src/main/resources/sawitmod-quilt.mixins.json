@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "com.sawit.kotaklegend.quilt.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "minVersion": "0.8",
+  "mixins": [
+    "AbstractFurnaceBlockEntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

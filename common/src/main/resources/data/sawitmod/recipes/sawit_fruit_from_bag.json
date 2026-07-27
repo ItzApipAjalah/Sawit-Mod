@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "sawitmod:sawit_bag"
+    }
+  ],
+  "result": {
+    "item": "sawitmod:sawit_fruit",
+    "count": 9
+  }
+}
