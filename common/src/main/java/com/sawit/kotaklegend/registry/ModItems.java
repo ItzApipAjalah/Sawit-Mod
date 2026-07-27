@@ -62,6 +62,23 @@ public class ModItems {
     public static final RegistrySupplier<Item> SAWIT_BAG = ITEMS.register("sawit_bag", () ->
             new BlockItem(ModBlocks.SAWIT_BAG.get(), new Item.Properties()));
 
+    public static final RegistrySupplier<Item> SAWIT_STAIRS = ITEMS.register("sawit_stairs", () ->
+            new BlockItem(ModBlocks.SAWIT_STAIRS.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> SAWIT_SLAB = ITEMS.register("sawit_slab", () ->
+            new BlockItem(ModBlocks.SAWIT_SLAB.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> SAWIT_FENCE = ITEMS.register("sawit_fence", () ->
+            new BlockItem(ModBlocks.SAWIT_FENCE.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> SAWIT_FENCE_GATE = ITEMS.register("sawit_fence_gate", () ->
+            new BlockItem(ModBlocks.SAWIT_FENCE_GATE.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> SAWIT_DOOR = ITEMS.register("sawit_door", () ->
+            new BlockItem(ModBlocks.SAWIT_DOOR.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> SAWIT_TRAPDOOR = ITEMS.register("sawit_trapdoor", () ->
+            new BlockItem(ModBlocks.SAWIT_TRAPDOOR.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> SAWIT_BUTTON = ITEMS.register("sawit_button", () ->
+            new BlockItem(ModBlocks.SAWIT_BUTTON.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> SAWIT_PRESSURE_PLATE = ITEMS.register("sawit_pressure_plate", () ->
+            new BlockItem(ModBlocks.SAWIT_PRESSURE_PLATE.get(), new Item.Properties()));
+
     public static void register() {
         ITEMS.register();
         
@@ -78,6 +95,14 @@ public class ModItems {
         dev.architectury.registry.CreativeTabRegistry.append(net.minecraft.world.item.CreativeModeTabs.BUILDING_BLOCKS, STRIPPED_SAWIT_WOOD);
         dev.architectury.registry.CreativeTabRegistry.append(net.minecraft.world.item.CreativeModeTabs.BUILDING_BLOCKS, SAWIT_PLANKS);
         dev.architectury.registry.CreativeTabRegistry.append(net.minecraft.world.item.CreativeModeTabs.BUILDING_BLOCKS, SAWIT_BAG);
+        dev.architectury.registry.CreativeTabRegistry.append(net.minecraft.world.item.CreativeModeTabs.BUILDING_BLOCKS, SAWIT_STAIRS);
+        dev.architectury.registry.CreativeTabRegistry.append(net.minecraft.world.item.CreativeModeTabs.BUILDING_BLOCKS, SAWIT_SLAB);
+        dev.architectury.registry.CreativeTabRegistry.append(net.minecraft.world.item.CreativeModeTabs.BUILDING_BLOCKS, SAWIT_FENCE);
+        dev.architectury.registry.CreativeTabRegistry.append(net.minecraft.world.item.CreativeModeTabs.BUILDING_BLOCKS, SAWIT_FENCE_GATE);
+        dev.architectury.registry.CreativeTabRegistry.append(net.minecraft.world.item.CreativeModeTabs.BUILDING_BLOCKS, SAWIT_DOOR);
+        dev.architectury.registry.CreativeTabRegistry.append(net.minecraft.world.item.CreativeModeTabs.BUILDING_BLOCKS, SAWIT_TRAPDOOR);
+        dev.architectury.registry.CreativeTabRegistry.append(net.minecraft.world.item.CreativeModeTabs.BUILDING_BLOCKS, SAWIT_BUTTON);
+        dev.architectury.registry.CreativeTabRegistry.append(net.minecraft.world.item.CreativeModeTabs.BUILDING_BLOCKS, SAWIT_PRESSURE_PLATE);
         dev.architectury.registry.CreativeTabRegistry.append(net.minecraft.world.item.CreativeModeTabs.TOOLS_AND_UTILITIES, SAWIT_BOAT);
         dev.architectury.registry.CreativeTabRegistry.append(net.minecraft.world.item.CreativeModeTabs.TOOLS_AND_UTILITIES, SAWIT_CHEST_BOAT);
     }

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "sawitmod:block/sawit_planks",
+    "top": "sawitmod:block/sawit_planks",
+    "side": "sawitmod:block/sawit_planks"
+  }
+}

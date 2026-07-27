@@ -31,5 +31,19 @@
   "entity.minecraft.villager.juragan_sawit.apprentice": "Apprentice Juragan Sawit",
   "entity.minecraft.villager.juragan_sawit.journeyman": "Journeyman Juragan Sawit",
   "entity.minecraft.villager.juragan_sawit.expert": "Expert Juragan Sawit",
-  "entity.minecraft.villager.juragan_sawit.master": "Master Juragan Sawit"
+  "entity.minecraft.villager.juragan_sawit.master": "Master Juragan Sawit",
+  "block.sawitmod.sawit_stairs": "Sawit Stairs",
+  "block.sawitmod.sawit_slab": "Sawit Slab",
+  "block.sawitmod.sawit_fence": "Sawit Fence",
+  "block.sawitmod.sawit_fence_gate": "Sawit Fence Gate",
+  "block.sawitmod.sawit_door": "Sawit Door",
+  "block.sawitmod.sawit_trapdoor": "Sawit Trapdoor",
+  "block.sawitmod.sawit_button": "Sawit Button",
+  "block.sawitmod.sawit_pressure_plate": "Sawit Pressure Plate",
+  "block.sawitmod.sawit_sign": "Sawit Sign",
+  "block.sawitmod.sawit_wall_sign": "Sawit Sign",
+  "block.sawitmod.sawit_hanging_sign": "Sawit Hanging Sign",
+  "block.sawitmod.sawit_wall_hanging_sign": "Sawit Hanging Sign",
+  "item.sawitmod.sawit_sign": "Sawit Sign",
+  "item.sawitmod.sawit_hanging_sign": "Sawit Hanging Sign"
 }

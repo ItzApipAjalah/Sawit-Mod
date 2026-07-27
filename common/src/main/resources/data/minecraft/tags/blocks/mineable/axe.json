@@ -4,6 +4,14 @@
     "#sawitmod:sawit_logs",
     "sawitmod:sawit_planks",
     "sawitmod:sawit_trunk",
-    "sawitmod:sawit_bag"
+    "sawitmod:sawit_bag",
+    "sawitmod:sawit_stairs",
+    "sawitmod:sawit_slab",
+    "sawitmod:sawit_fence",
+    "sawitmod:sawit_fence_gate",
+    "sawitmod:sawit_door",
+    "sawitmod:sawit_trapdoor",
+    "sawitmod:sawit_button",
+    "sawitmod:sawit_pressure_plate"
   ]
 }
