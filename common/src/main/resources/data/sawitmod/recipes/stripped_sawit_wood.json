@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "sawitmod:stripped_sawit_log"
+    }
+  },
+  "result": {
+    "item": "sawitmod:stripped_sawit_wood",
+    "count": 3
+  }
+}

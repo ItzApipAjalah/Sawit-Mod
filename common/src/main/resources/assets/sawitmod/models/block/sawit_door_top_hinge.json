@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_rh",
+  "textures": {
+    "bottom": "sawitmod:block/sawit_door_bottom",
+    "top": "sawitmod:block/sawit_door_top"
+  }
+}
