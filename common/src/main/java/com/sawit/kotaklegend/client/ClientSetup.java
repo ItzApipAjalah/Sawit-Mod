@@ -22,32 +22,94 @@ public class ClientSetup {
             );
             dev.architectury.registry.client.rendering.BlockEntityRendererRegistry.register(
                 (net.minecraft.world.level.block.entity.BlockEntityType<net.minecraft.world.level.block.entity.SignBlockEntity>) (Object) com.sawit.kotaklegend.registry.ModBlockEntities.SAWIT_SIGN_BE.get(),
-                net.minecraft.client.renderer.blockentity.SignRenderer::new
+                (context) -> {
+                    net.minecraft.client.renderer.blockentity.SignRenderer renderer = new net.minecraft.client.renderer.blockentity.SignRenderer(context);
+                    try {
+                        for (java.lang.reflect.Field field : net.minecraft.client.renderer.blockentity.SignRenderer.class.getDeclaredFields()) {
+                            if (java.util.Map.class.isAssignableFrom(field.getType())) {
+                                field.setAccessible(true);
+                                java.util.Map map = (java.util.Map) field.get(renderer);
+                                if (map != null && !map.containsKey(com.sawit.kotaklegend.registry.ModBlocks.SAWIT_WOOD_TYPE)) {
+                                    net.minecraft.client.model.geom.ModelPart part = context.bakeLayer(new net.minecraft.client.model.geom.ModelLayerLocation(new net.minecraft.resources.ResourceLocation("minecraft", "sign/sawit"), "main"));
+                                    net.minecraft.client.renderer.blockentity.SignRenderer.SignModel signModel = new net.minecraft.client.renderer.blockentity.SignRenderer.SignModel(part);
+                                    try {
+                                        map.put(com.sawit.kotaklegend.registry.ModBlocks.SAWIT_WOOD_TYPE, signModel);
+                                    } catch (UnsupportedOperationException e) {
+                                        java.util.Map newMap = new java.util.HashMap(map);
+                                        newMap.put(com.sawit.kotaklegend.registry.ModBlocks.SAWIT_WOOD_TYPE, signModel);
+                                        field.set(renderer, newMap);
+                                    }
+                                }
+                            }
+                        }
+                    } catch (Exception e) { e.printStackTrace(); }
+                    return renderer;
+                }
             );
             dev.architectury.registry.client.rendering.BlockEntityRendererRegistry.register(
                 (net.minecraft.world.level.block.entity.BlockEntityType<net.minecraft.world.level.block.entity.SignBlockEntity>) (Object) com.sawit.kotaklegend.registry.ModBlockEntities.SAWIT_HANGING_SIGN_BE.get(),
-                net.minecraft.client.renderer.blockentity.HangingSignRenderer::new
+                (context) -> {
+                    net.minecraft.client.renderer.blockentity.HangingSignRenderer renderer = new net.minecraft.client.renderer.blockentity.HangingSignRenderer(context);
+                    try {
+                        for (java.lang.reflect.Field field : net.minecraft.client.renderer.blockentity.HangingSignRenderer.class.getDeclaredFields()) {
+                            if (java.util.Map.class.isAssignableFrom(field.getType())) {
+                                field.setAccessible(true);
+                                java.util.Map map = (java.util.Map) field.get(renderer);
+                                if (map != null && !map.containsKey(com.sawit.kotaklegend.registry.ModBlocks.SAWIT_WOOD_TYPE)) {
+                                    net.minecraft.client.model.geom.ModelPart part = context.bakeLayer(new net.minecraft.client.model.geom.ModelLayerLocation(new net.minecraft.resources.ResourceLocation("minecraft", "hanging_sign/sawit"), "main"));
+                                    net.minecraft.client.renderer.blockentity.HangingSignRenderer.HangingSignModel signModel = new net.minecraft.client.renderer.blockentity.HangingSignRenderer.HangingSignModel(part);
+                                    try {
+                                        map.put(com.sawit.kotaklegend.registry.ModBlocks.SAWIT_WOOD_TYPE, signModel);
+                                    } catch (UnsupportedOperationException e) {
+                                        java.util.Map newMap = new java.util.HashMap(map);
+                                        newMap.put(com.sawit.kotaklegend.registry.ModBlocks.SAWIT_WOOD_TYPE, signModel);
+                                        field.set(renderer, newMap);
+                                    }
+                                }
+                            }
+                        }
+                    } catch (Exception e) { e.printStackTrace(); }
+                    return renderer;
+                }
             );
+
+            boolean isRegisteredByVanilla = net.minecraft.world.level.block.state.properties.WoodType.values().anyMatch(w -> w == com.sawit.kotaklegend.registry.ModBlocks.SAWIT_WOOD_TYPE);
+            if (!isRegisteredByVanilla) {
+                dev.architectury.registry.client.level.entity.EntityModelLayerRegistry.register(
+                    new net.minecraft.client.model.geom.ModelLayerLocation(new net.minecraft.resources.ResourceLocation("minecraft", "sign/sawit"), "main"),
+                    net.minecraft.client.renderer.blockentity.SignRenderer::createSignLayer
+                );
+                dev.architectury.registry.client.level.entity.EntityModelLayerRegistry.register(
+                    new net.minecraft.client.model.geom.ModelLayerLocation(new net.minecraft.resources.ResourceLocation("minecraft", "hanging_sign/sawit"), "main"),
+                    net.minecraft.client.renderer.blockentity.HangingSignRenderer::createHangingSignLayer
+                );
+            }
 
             // Entity model layers are automatically registered by Vanilla for WoodTypes in WoodType.VALUES
 
             try {
-                // Read HANGING_SIGN_MATERIALS via reflection to see what texture it points to
                 for (java.lang.reflect.Field field : net.minecraft.client.renderer.Sheets.class.getDeclaredFields()) {
                     if (java.util.Map.class.isAssignableFrom(field.getType())) {
                         field.setAccessible(true);
-                        java.util.Map map = (java.util.Map) field.get(null);
-                        if (map.containsKey(com.sawit.kotaklegend.registry.ModBlocks.SAWIT_WOOD_TYPE)) {
-                            Object val = map.get(com.sawit.kotaklegend.registry.ModBlocks.SAWIT_WOOD_TYPE);
-                            if (val instanceof net.minecraft.client.resources.model.Material) {
-                                net.minecraft.client.resources.model.Material mat = (net.minecraft.client.resources.model.Material) val;
-                                System.out.println("[DEBUG SAWIT] Map contains SAWIT_WOOD_TYPE. Texture path: " + mat.texture());
+                        java.util.Map<net.minecraft.world.level.block.state.properties.WoodType, net.minecraft.client.resources.model.Material> map = 
+                            (java.util.Map<net.minecraft.world.level.block.state.properties.WoodType, net.minecraft.client.resources.model.Material>) field.get(null);
+                        
+                        if (!map.containsKey(com.sawit.kotaklegend.registry.ModBlocks.SAWIT_WOOD_TYPE)) {
+                            if (map.containsKey(net.minecraft.world.level.block.state.properties.WoodType.OAK)) {
+                                net.minecraft.client.resources.model.Material oakMat = map.get(net.minecraft.world.level.block.state.properties.WoodType.OAK);
+                                boolean isHanging = oakMat.texture().getPath().contains("hanging");
+                                net.minecraft.client.resources.model.Material sawitMat = new net.minecraft.client.resources.model.Material(
+                                    net.minecraft.client.renderer.Sheets.SIGN_SHEET, 
+                                    new net.minecraft.resources.ResourceLocation(isHanging ? "entity/signs/hanging/sawit" : "entity/signs/sawit")
+                                );
+                                map.put(com.sawit.kotaklegend.registry.ModBlocks.SAWIT_WOOD_TYPE, sawitMat);
+                                System.out.println("[DEBUG SAWIT] Successfully injected sawit sign material into Sheets!");
                             }
                         }
                     }
                 }
             } catch (Exception e) {
-                System.out.println("[DEBUG SAWIT] Failed to read maps");
+                System.out.println("[DEBUG SAWIT] Failed to inject sign materials");
                 e.printStackTrace();
             }
 
