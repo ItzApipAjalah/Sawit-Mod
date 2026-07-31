@@ -4,15 +4,15 @@ Hey there! Welcome to SawitMod, a multi-version Minecraft mod that brings a palm
 
 ![Sawit Plantation Biome](README/biome.png)
 
-## Supported Versions
+## Supported Versions & Loaders
 
-| Version | Status       | Fully Tested |
-|---------|--------------|--------------|
-| 1.20.1  | ✅ Supported | ✅ Yes        |
-| 1.20.2  | ✅ Supported | ❌ Not Yet    |
-| 1.20.4  | ✅ Supported | ❌ Not Yet    |
-| 1.20.5  | ✅ Supported | ❌ Not Yet    |
-| 1.20.6  | ✅ Supported | ❌ Not Yet    |
+| Version | Fabric | Quilt | Forge | NeoForge |
+|---------|--------|-------|-------|----------|
+| 1.20.1  | ✅ | ✅ | ✅ | ❌ |
+| 1.20.2  | ✅ | ✅ | ✅ | ❌ |
+| 1.20.4  | ✅ | ✅ | ❌ | ✅ |
+| 1.20.5  | ✅ | ✅ | ❌ | ✅ |
+| 1.20.6  | ✅ | ✅ | ❌ | ✅ |
 
 ## Features
 - **Sawit (Palm) Trees**: Tall palm trees with dense canopies and complete growth stages.
