@@ -6,9 +6,9 @@
     "version": "${version}",
     "metadata": {
       "name": "sawitmod",
-      "description": "This is an example description! Tell everyone what your mod is about!",
+      "description": "MARI KITA MENYAWIT!!!!!!!!",
       "contributors": {
-        "Me!": "Author"
+        "burung25": "Author"
       },
       "icon": "icon.png",
       "contact": {
@@ -19,7 +19,7 @@
     },
     "intermediate_mappings": "net.fabricmc:intermediary",
     "entrypoints": {
-      "init": [
+      "main": [
         "com.sawit.kotaklegend.quilt.ExampleModQuilt"
       ],
       "terrablender": [
