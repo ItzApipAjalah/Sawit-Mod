@@ -13,6 +13,17 @@ Hey there! Welcome to SawitMod, a multi-version Minecraft mod that brings a palm
 | 1.20.4  | ✅ | ✅ | ❌ | ✅ |
 | 1.20.5  | ✅ | ✅ | ❌ | ✅ |
 | 1.20.6  | ✅ | ✅ | ❌ | ✅ |
+| 1.21.1  | 🚧 WIP | 🚧 WIP | 🚧 WIP | 🚧 WIP |
+| 1.21.2  | 🚧 WIP | 🚧 WIP | 🚧 WIP | 🚧 WIP |
+| 1.21.3  | 🚧 WIP | 🚧 WIP | 🚧 WIP | 🚧 WIP |
+| 1.21.4  | 🚧 WIP | 🚧 WIP | 🚧 WIP | 🚧 WIP |
+| 1.21.5  | 🚧 WIP | 🚧 WIP | 🚧 WIP | 🚧 WIP |
+| 1.21.6  | 🚧 WIP | 🚧 WIP | 🚧 WIP | 🚧 WIP |
+| 1.21.7  | 🚧 WIP | 🚧 WIP | 🚧 WIP | 🚧 WIP |
+| 1.21.8  | 🚧 WIP | 🚧 WIP | 🚧 WIP | 🚧 WIP |
+| 1.21.9  | 🚧 WIP | 🚧 WIP | 🚧 WIP | 🚧 WIP |
+| 1.21.10 | 🚧 WIP | 🚧 WIP | 🚧 WIP | 🚧 WIP |
+| 1.21.11 | 🚧 WIP | 🚧 WIP | 🚧 WIP | 🚧 WIP |
 
 ## Features
 - **Sawit (Palm) Trees**: Tall palm trees with dense canopies and complete growth stages.
