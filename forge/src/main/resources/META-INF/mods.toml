@@ -1,35 +1,38 @@
 modLoader = "javafml"
-loaderVersion = "[49,)"
+loaderVersion = "*"
 #issueTrackerURL = ""
-license = "Insert License Here"
+issueTrackerURL = "https://github.com/ItzApipAjalah/Sawit-Mod/issues"
+displayURL = "https://github.com/ItzApipAjalah/Sawit-Mod"
+license = "MIT"
 
 [[mods]]
 modId = "sawitmod"
 version = "${version}"
 displayName = "sawitmod"
-authors = "Me!"
+authors = "burung25"
 description = '''
-This is an example description! Tell everyone what your mod is about!
+MARI KITA MENYAWIT!!!!!!!!
 '''
 #logoFile = ""
+logoFile = "icon.png"
 
 [[dependencies.sawitmod]]
 modId = "forge"
 mandatory = true
-versionRange = "[49,)"
+versionRange = "*"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.sawitmod]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[1.20.4,)"
+versionRange = "*"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.sawitmod]]
 modId = "architectury"
 mandatory = true
-versionRange = "[11.1.17,)"
+versionRange = "*"
 ordering = "AFTER"
 side = "BOTH"
