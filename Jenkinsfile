@@ -18,7 +18,7 @@ pipeline {
         stage('Build Mod') {
             steps {
                 sh 'chmod +x ./gradlew'
-                sh './gradlew build -Porg.gradle.java.installations.auto-detect=false -Porg.gradle.java.installations.paths=/usr/lib/jvm/java-1.21.0-openjdk-amd64'
+                sh './gradlew build'
             }
         }
     }
@@ -37,3 +37,4 @@ pipeline {
         }
     }
 }
+
