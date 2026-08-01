@@ -13,7 +13,7 @@ Hey there! Welcome to SawitMod, a multi-version Minecraft mod that brings a palm
 | 1.20.4  | ✅ | ✅ | ❌ | ✅ |
 | 1.20.5  | ✅ | ✅ | ❌ | ✅ |
 | 1.20.6  | ✅ | ✅ | ❌ | ✅ |
-| 1.21.1  | 🚧 WIP | 🚧 WIP | 🚧 WIP | 🚧 WIP |
+| 1.21.1  | ✅ | ✅ | ❌ | ✅ |
 | 1.21.2  | 🚧 WIP | 🚧 WIP | 🚧 WIP | 🚧 WIP |
 | 1.21.3  | 🚧 WIP | 🚧 WIP | 🚧 WIP | 🚧 WIP |
 | 1.21.4  | 🚧 WIP | 🚧 WIP | 🚧 WIP | 🚧 WIP |
@@ -66,7 +66,8 @@ This mod is built using Architectury. Just grab the compiled .jar file and drop 
 Requirements:
 - Minecraft 1.20.1
 - Fabric API (if you are playing on Fabric)
-- Architectury API (depending on your loader)
+- [Architectury API](https://modrinth.com/mod/architectury-api) (required multi-loader framework to make the mod work across Fabric, Forge, NeoForge, and Quilt)
+- [TerraBlender](https://modrinth.com/mod/terrablender) (required to ensure the Sawit Plantation biome generates properly and blends naturally in the Overworld)
 
 ## Building from Source
 If you want to compile the mod yourself, open your terminal in the project folder and run:
