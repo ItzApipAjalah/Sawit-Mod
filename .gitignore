@@ -45,7 +45,6 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 temp/
-
 # Environments
 .env
 .venv
