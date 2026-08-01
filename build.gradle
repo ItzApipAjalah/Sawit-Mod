@@ -1,9 +1,4 @@
-buildscript {
-    configurations.classpath.resolutionStrategy {
-        force 'net.fabricmc.unpick:unpick:2.2.4'
-        force 'net.fabricmc.unpick:unpick-format-utils:2.2.4'
-    }
-}
+
 plugins {
     id 'dev.architectury.loom' version '1.9-SNAPSHOT' apply false
     id 'architectury-plugin' version '3.4-SNAPSHOT'
@@ -76,6 +71,7 @@ subprojects {
         }
     }
 }
+
 
 
 
