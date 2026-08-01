@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         // Set Java version (Always use Java 21 for Gradle 8.14+ since some Architectury plugins require it)
-        JAVA_HOME = '/usr/lib/jvm/java-1.21.0-openjdk-amd64'
+        JAVA_HOME = '/usr/lib/jvm/java-21-openjdk-amd64'
         PATH = "${env.JAVA_HOME}/bin:${env.PATH}"
     }
 
@@ -19,8 +19,8 @@ pipeline {
             steps {
                 sh 'chmod +x ./gradlew'
                 sh 'echo org.gradle.java.installations.auto-detect=false >> gradle.properties'
-                sh 'echo org.gradle.java.installations.paths=/usr/lib/jvm/java-1.21.0-openjdk-amd64 >> gradle.properties'
-                sh 'echo org.gradle.java.home=/usr/lib/jvm/java-1.21.0-openjdk-amd64 >> gradle.properties'
+                sh 'echo org.gradle.java.installations.paths=/usr/lib/jvm/java-21-openjdk-amd64 >> gradle.properties'
+                sh 'echo org.gradle.java.home=/usr/lib/jvm/java-21-openjdk-amd64 >> gradle.properties'
                 sh './gradlew build'
             }
         }
@@ -40,6 +40,7 @@ pipeline {
         }
     }
 }
+
 
 
 
