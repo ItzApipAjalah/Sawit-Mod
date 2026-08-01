@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "XXX",
+        "XXX",
+        "XXX"
+    ],
+    "key": {
+        "X": {
+            "item": "sawitmod:sawit_fruit"
+        }
+    },
+    "result": {
+        "count": 1,
+        "id": "sawitmod:sawit_bag"
+    }
+}

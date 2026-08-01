@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "sawitmod",
+  "version": "${version}",
+  "name": "sawitmod",
+  "description": "MARI KITA MENYAWIT!!!!!!!!",
+  "authors": [
+    "burung25"
+  ],
+  "contact": {
+    "homepage": "https://github.com/ItzApipAjalah/Sawit-Mod",
+    "sources": "https://github.com/ItzApipAjalah/Sawit-Mod"
+  },
+  "license": "CC0-1.0",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.sawit.kotaklegend.fabric.ExampleModFabric"
+    ],
+    "client": [
+      "com.sawit.kotaklegend.fabric.client.ExampleModFabricClient"
+    ]
+  },
+  "mixins": [
+    "sawitmod.mixins.json",
+    "sawitmod-fabric.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": "*",
+    "minecraft": ">=1.21",
+    "java": ">=21",
+    "architectury": ">=13.0.0",
+    "fabric-api": "*",
+    "terrablender": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
