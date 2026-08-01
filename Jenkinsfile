@@ -31,10 +31,10 @@ pipeline {
                 always {
             sh '''
                 mkdir -p Output/Fabric Output/Forge Output/Quilt Output/NeoForge
-                find fabric/build/libs -maxdepth 1 -name "*.jar" ! -name "*-dev-shadow.jar" ! -name "*-sources.jar" -exec cp {} Output/Fabric/ \; 2>/dev/null || true
-                find forge/build/libs -maxdepth 1 -name "*.jar" ! -name "*-dev-shadow.jar" ! -name "*-sources.jar" -exec cp {} Output/Forge/ \; 2>/dev/null || true
-                find quilt/build/libs -maxdepth 1 -name "*.jar" ! -name "*-dev-shadow.jar" ! -name "*-sources.jar" -exec cp {} Output/Quilt/ \; 2>/dev/null || true
-                find neoforge/build/libs -maxdepth 1 -name "*.jar" ! -name "*-dev-shadow.jar" ! -name "*-sources.jar" -exec cp {} Output/NeoForge/ \; 2>/dev/null || true
+                find fabric/build/libs -maxdepth 1 -name "*.jar" ! -name "*-dev-shadow.jar" ! -name "*-sources.jar" -exec cp {} Output/Fabric/ \\; 2>/dev/null || true
+                find forge/build/libs -maxdepth 1 -name "*.jar" ! -name "*-dev-shadow.jar" ! -name "*-sources.jar" -exec cp {} Output/Forge/ \\; 2>/dev/null || true
+                find quilt/build/libs -maxdepth 1 -name "*.jar" ! -name "*-dev-shadow.jar" ! -name "*-sources.jar" -exec cp {} Output/Quilt/ \\; 2>/dev/null || true
+                find neoforge/build/libs -maxdepth 1 -name "*.jar" ! -name "*-dev-shadow.jar" ! -name "*-sources.jar" -exec cp {} Output/NeoForge/ \\; 2>/dev/null || true
                 rmdir Output/* 2>/dev/null || true
             '''
             archiveArtifacts artifacts: 'Output/**/*.jar', allowEmptyArchive: true
@@ -47,6 +47,8 @@ pipeline {
         }
     }
 }
+
+
 
 
 
