@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "com.sawit.kotaklegend.neoforge.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "AbstractFurnaceBlockEntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "age=0": { "model": "sawitmod:block/kecambah_sawit" },
+        "age=1": { "model": "sawitmod:block/bibit_sawit" },
+        "age=2": { "model": "sawitmod:block/anak_sawit" },
+        "age=3": { "model": "sawitmod:block/remaja_sawit" },
+        "age=4": { "model": "sawitmod:block/sawit_trunk_segment" },
+        "age=5": { "model": "sawitmod:block/sawit_trunk_segment" }
+    }
+}

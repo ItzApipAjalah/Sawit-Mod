@@ -1,0 +1,93 @@
+{
+    "credit": "Made with Blockbench",
+    "textures": {
+        "cross": "sawitmod:block/bibit_sawit",
+        "particle": "sawitmod:block/bibit_sawit"
+    },
+    "elements": [
+        {
+            "name": "cross1",
+            "from": [
+                0.8,
+                0,
+                8
+            ],
+            "to": [
+                15.2,
+                16,
+                8
+            ],
+            "rotation": {
+                "angle": 45,
+                "axis": "y",
+                "origin": [
+                    8,
+                    8,
+                    8
+                ]
+            },
+            "faces": {
+                "north": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#cross"
+                },
+                "south": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#cross"
+                }
+            }
+        },
+        {
+            "name": "cross2",
+            "from": [
+                0.8,
+                0,
+                8
+            ],
+            "to": [
+                15.2,
+                16,
+                8
+            ],
+            "rotation": {
+                "angle": -45,
+                "axis": "y",
+                "origin": [
+                    8,
+                    8,
+                    8
+                ]
+            },
+            "faces": {
+                "north": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#cross"
+                },
+                "south": {
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#cross"
+                }
+            }
+        }
+    ]
+}

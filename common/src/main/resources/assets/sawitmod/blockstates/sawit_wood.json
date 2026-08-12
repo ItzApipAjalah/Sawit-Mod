@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=y": {
+      "model": "sawitmod:block/sawit_wood"
+    },
+    "axis=z": {
+      "model": "sawitmod:block/sawit_wood",
+      "x": 90
+    },
+    "axis=x": {
+      "model": "sawitmod:block/sawit_wood",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

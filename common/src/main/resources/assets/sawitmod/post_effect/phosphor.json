@@ -1,0 +1,52 @@
+{
+    "targets": {
+        "swap": {},
+        "previous": {}
+    },
+    "passes": [
+        {
+            "program": "sawitmod:post/phosphor",
+            "inputs": [
+                {
+                    "sampler_name": "DiffuseSampler",
+                    "target": "minecraft:main"
+                },
+                {
+                    "sampler_name": "PrevSampler",
+                    "target": "previous"
+                }
+            ],
+            "output": "swap",
+            "uniforms": [
+                {
+                    "name": "Phosphor",
+                    "values": [
+                        0.95,
+                        0.95,
+                        0.95
+                    ]
+                }
+            ]
+        },
+        {
+            "program": "minecraft:post/blit",
+            "inputs": [
+                {
+                    "sampler_name": "InSampler",
+                    "target": "swap"
+                }
+            ],
+            "output": "previous"
+        },
+        {
+            "program": "minecraft:post/blit",
+            "inputs": [
+                {
+                    "sampler_name": "InSampler",
+                    "target": "swap"
+                }
+            ],
+            "output": "minecraft:main"
+        }
+    ]
+}

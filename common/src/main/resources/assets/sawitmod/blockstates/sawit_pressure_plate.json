@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "sawitmod:block/sawit_pressure_plate"
+    },
+    "powered=true": {
+      "model": "sawitmod:block/sawit_pressure_plate_down"
+    }
+  }
+}

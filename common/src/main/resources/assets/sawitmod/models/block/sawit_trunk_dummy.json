@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "sawitmod:block/transparent",
+    "particle": "sawitmod:block/sawit_trunk"
+  }
+}

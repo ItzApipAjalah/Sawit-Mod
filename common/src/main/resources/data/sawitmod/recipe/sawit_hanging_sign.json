@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "hanging_sign",
+    "pattern": [
+        "C C",
+        "PPP",
+        "PPP"
+    ],
+    "key": {
+        "P": "sawitmod:stripped_sawit_log",
+        "C": "minecraft:chain"
+    },
+    "result": {
+        "count": 6,
+        "id": "sawitmod:sawit_hanging_sign"
+    }
+}

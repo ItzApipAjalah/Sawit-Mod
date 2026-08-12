@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "sawitmod:sawit_log",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "sawitmod:sawit",
+                  "properties": {
+                    "age": "4"
+                  }
+                }
+              ],
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": 40.0
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "sawitmod:sawit_log",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "sawitmod:sawit",
+                  "properties": {
+                    "age": "5"
+                  }
+                }
+              ],
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": 40.0
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "sawitmod:sawit_seeds"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
