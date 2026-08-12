@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "FFF",
+        "FBF",
+        "FFF"
+    ],
+    "key": {
+        "F": "sawitmod:sawit_fruit",
+        "B": "minecraft:glass_bottle"
+    },
+    "result": {
+        "count": 1,
+        "id": "sawitmod:sawit_oil_3"
+    }
+}

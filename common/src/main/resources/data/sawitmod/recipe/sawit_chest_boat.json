@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "C",
+        "B"
+    ],
+    "key": {
+        "C": "minecraft:chest",
+        "B": "sawitmod:sawit_boat"
+    },
+    "result": {
+        "id": "sawitmod:sawit_chest_boat"
+    }
+}

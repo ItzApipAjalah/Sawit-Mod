@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "sawitmod:block/sawit_slab"
+    },
+    "type=top": {
+      "model": "sawitmod:block/sawit_slab_top"
+    },
+    "type=double": {
+      "model": "sawitmod:block/sawit_planks"
+    }
+  }
+}

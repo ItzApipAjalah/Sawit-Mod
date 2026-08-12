@@ -1,0 +1,60 @@
+{
+    "targets": {
+        "swap": {},
+        "previous": {}
+    },
+    "passes": [
+        {
+            "vertex_shader": "minecraft:sobel",
+            "fragment_shader": "sawitmod:phosphor",
+            "blend": {
+                "func": "add",
+                "srcrgb": "one",
+                "dstrgb": "zero"
+            },
+            "inputs": [
+                {
+                    "sampler_name": "DiffuseSampler",
+                    "target": "minecraft:main"
+                },
+                {
+                    "sampler_name": "PrevSampler",
+                    "target": "previous"
+                }
+            ],
+            "output": "swap",
+            "uniforms": [
+                {
+                    "name": "Phosphor",
+                    "values": [
+                        0.95,
+                        0.95,
+                        0.95
+                    ]
+                }
+            ]
+        },
+        {
+            "vertex_shader": "minecraft:blit",
+            "fragment_shader": "minecraft:blit",
+            "inputs": [
+                {
+                    "sampler_name": "InSampler",
+                    "target": "swap"
+                }
+            ],
+            "output": "previous"
+        },
+        {
+            "vertex_shader": "minecraft:blit",
+            "fragment_shader": "minecraft:blit",
+            "inputs": [
+                {
+                    "sampler_name": "InSampler",
+                    "target": "swap"
+                }
+            ],
+            "output": "minecraft:main"
+        }
+    ]
+}

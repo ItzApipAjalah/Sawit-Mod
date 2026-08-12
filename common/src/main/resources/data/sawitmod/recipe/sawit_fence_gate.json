@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "W#W",
+        "W#W"
+    ],
+    "key": {
+        "#": "sawitmod:sawit_planks",
+        "W": "minecraft:stick"
+    },
+    "result": {
+        "count": 1,
+        "id": "sawitmod:sawit_fence_gate"
+    }
+}

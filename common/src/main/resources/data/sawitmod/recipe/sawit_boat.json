@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "# #",
+        "###"
+    ],
+    "key": {
+        "#": "sawitmod:sawit_planks"
+    },
+    "result": {
+        "id": "sawitmod:sawit_boat"
+    }
+}

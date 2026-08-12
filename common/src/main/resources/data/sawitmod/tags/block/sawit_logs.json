@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "sawitmod:stripped_sawit_log",
+    "sawitmod:sawit_log",
+    "sawitmod:sawit_wood",
+    "sawitmod:stripped_sawit_wood"
+  ]
+}
