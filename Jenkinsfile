@@ -22,7 +22,8 @@ pipeline {
                 sh 'echo org.gradle.java.installations.paths=/usr/lib/jvm/java-21-openjdk-amd64 >> gradle.properties'
                 sh 'echo org.gradle.java.home=/usr/lib/jvm/java-21-openjdk-amd64 >> gradle.properties'
                 sh "echo 'allprojects { tasks.withType(JavaCompile).configureEach { javaCompiler = null } }' >> build.gradle"
-                sh './gradlew build'
+                sh 'rm -rf ~/.gradle/caches/fabric-loom ~/.gradle/caches/architectury-loom'
+                sh './gradlew clean build --refresh-dependencies'
             }
         }
     }
@@ -47,6 +48,7 @@ pipeline {
         }
     }
 }
+
 
 
 
